@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F3F3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Rl1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Location"
+            android:id="@+id/locationCtv"
+            android:layout_below="@+id/dateCtv"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="sum"
+            android:id="@+id/sumCtv"
+            android:layout_below="@+id/dateCtv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="date"
+            android:id="@+id/dateCtv"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/colorFL" />
+
+        <FrameLayout
+            android:layout_width="15dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/sumCtv"
+            android:id="@+id/colorFL"></FrameLayout>
+
+        <FrameLayout
+            android:layout_width="15dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/sumCtv"
+            android:id="@+id/colorFR"></FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="TypeShift"
+            android:id="@+id/TypeShiftTV"
+            android:layout_alignTop="@+id/dateCtv"
+            android:layout_toStartOf="@+id/colorFR" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Rl2"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:background="#55515151"></FrameLayout>
+
+        <FrameLayout
+            android:layout_width="15dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/sumCtv2"
+            android:id="@+id/colorFL2" />
+
+        <FrameLayout
+            android:layout_width="15dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/sumCtv2"
+            android:id="@+id/colorFR2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Location"
+            android:id="@+id/locationCtv2"
+            android:layout_below="@+id/dateCtv2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="sum"
+            android:id="@+id/sumCtv2"
+            android:layout_below="@+id/dateCtv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="date"
+            android:id="@+id/dateCtv2"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/colorFL2"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="TypeShift"
+            android:id="@+id/TypeShiftTV2"
+            android:layout_alignTop="@+id/dateCtv2"
+            android:layout_toStartOf="@+id/colorFR2"
+            android:layout_marginTop="3dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

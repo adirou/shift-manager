@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#a8aaa3">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:clickable="true"
+        android:background="#d7d6d6"
+        android:id="@+id/breakUi"
+        android:visibility="gone"></FrameLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#F3F3F3"
+    android:longClickable="true"
+    android:id="@+id/RLid">
+    <!-- title -->
+
+    <TextView
+        android:id="@+id/eventDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="date"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/FLColor"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/eventSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="sum"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/eventSumCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="sumCash"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:autoText="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="theLocation"
+        android:id="@+id/eventLocation"
+        android:visibility="invisible"
+        android:layout_marginRight="35dp"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/imgCar"
+        android:src="@mipmap/ic_car"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="14dp"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/eventSumCash"
+        android:layout_toEndOf="@+id/FLColor"
+        android:layout_marginRight="14dp" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/imgSms"
+        android:src="@mipmap/ic_sms"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="7dp"
+        android:layout_alignBottom="@+id/eventSumCash"
+        android:layout_toEndOf="@+id/imgCar"
+        android:visibility="invisible"
+        android:layout_marginBottom="3dp" />
+
+    <FrameLayout
+        android:layout_width="13dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/FLColor"></FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/PlusCash"
+        android:id="@+id/PlusCash"
+        android:textSize="8sp"
+        android:layout_alignBottom="@+id/imgSms"
+        android:layout_toStartOf="@id/eventSumCash"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/eventHours"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:layout_below="@+id/eventLocation"
+        android:layout_marginTop="-2dp"
+        android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ClickNew"
+            android:layout_centerInParent="true"
+            android:background="@drawable/start_pic"
+            android:visibility="gone"
+            android:clickable="true" />
+
+        <!-- counter -->
+
+</RelativeLayout></LinearLayout>

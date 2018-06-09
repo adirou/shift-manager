@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="my.ungersinc.user.shiftmanager.ViewOnCalender">
+    <item
+        android:id="@+id/action_addEvent"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/abc_ic_menu_selectall_mtrl_alpha"
+        android:title="newEvent"
+        />
+    <item
+        android:id="@+id/action_showList"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_action_view_as_list"
+        android:title="showList"
+        />
+</menu>

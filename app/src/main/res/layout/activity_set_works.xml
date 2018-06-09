@@ -1,0 +1,681 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="my.ungersinc.user.shiftmanager.SetWorksActivity"
+    android:background="#ffdffffd">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/setMessageTV"
+        android:text="txt"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+
+        android:background="@drawable/textset_shape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:gravity="start"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="50dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="bottom">
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="16dp" tools:context=".SetWorksActivity"
+            android:orientation="vertical"
+            android:background="#ffdffffd">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/SetWorkName"
+        android:id="@+id/textView14"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginTop="10dp"
+        android:layout_columnSpan="2" />
+
+            <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workNameET"
+        android:hint="@string/SetHWorkName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_marginTop="10dp"
+                android:layout_columnWeight="0"
+                android:layout_columnSpan="2"
+                android:textAlignment="center"
+                android:layout_gravity="fill_horizontal"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/SetColor"
+                android:id="@+id/textView17"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginTop="10dp"
+                android:layout_columnSpan="2" />
+
+            <FrameLayout
+
+                android:layout_row="1"
+                android:layout_column="2"
+                android:id="@+id/FLPaint"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="#FFFFFF"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/flcolor_shape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_columnSpan="2">
+
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/SetDefault"
+                android:id="@+id/textView19"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnSpan="2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DefaultCB"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:checked="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_columnSpan="2" />
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/SetSalaryType"
+        android:id="@+id/textView15"
+        android:layout_alignTop="@+id/spinnerTypeSal"
+        android:layout_alignParentStart="true"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_marginTop="15dp"
+        android:layout_columnSpan="2" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTypeSal"
+        android:layout_below="@+id/workNameET"
+        android:layout_alignParentEnd="true"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="15dp"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal" /><![CDATA[
+
+
+
+            />
+
+
+
+            ]]>
+
+            <EditText
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/salaryGlobalStartStepIET"
+        android:layout_row="4"
+        android:layout_column="3"
+        android:hint="@string/SetHSalary"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_columnWeight="0"
+                android:maxLines="1"
+                android:layout_gravity="left" />
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/SetGlobal"
+        android:id="@+id/globalStartC"
+        android:layout_below="@+id/spinnerTypeSal"
+        android:layout_alignParentStart="true"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+                android:layout_columnSpan="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/SetPerHour"
+                android:id="@+id/perHourC"
+                android:layout_row="4"
+                android:layout_marginTop="10dp"
+                android:layout_column="1"
+                android:visibility="gone" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/perHourET"
+                android:layout_row="4"
+                android:layout_column="3"
+                android:hint="@string/SetHPerHour"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="fill_horizontal"
+                android:visibility="gone" />
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/SetStepII"
+        android:id="@+id/stepIIC"
+        android:layout_row="6"
+        android:layout_column="1"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hoursIET"
+                android:layout_below="@+id/spinnerTypeSal"
+                android:layout_alignStart="@+id/spinnerTypeSal"
+                android:layout_row="6"
+                android:layout_column="2"
+                android:hint="@string/SetHHour"
+                android:numeric="signed|integer|decimal"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:visibility="invisible" />
+
+            <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stepIIET"
+        android:layout_row="6"
+        android:layout_column="3"
+        android:hint="@string/SetHSalary"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:layout_gravity="fill_horizontal"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/SetStepIII"
+        android:id="@+id/stepIIIC"
+        android:layout_row="8"
+        android:layout_column="1"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp" />
+
+            <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hoursIIET"
+        android:layout_row="8"
+        android:layout_column="2"
+        android:hint="@string/SetHHour"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+            <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stepIIIET"
+        android:layout_row="8"
+        android:layout_column="3"
+        android:hint="@string/SetHSalary"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:layout_gravity="fill_horizontal"
+        android:visibility="gone" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/imageButtonI"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:background="@drawable/plus_add_green"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/imageButtonII"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:background="@drawable/plus_add_green"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+
+            <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hoursIIIET"
+        android:layout_row="9"
+        android:layout_column="2"
+        android:hint="@string/SetHHour"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/SetOverTime"
+                android:id="@+id/addPerHourC"
+                android:layout_row="9"
+                android:layout_column="1"
+                android:visibility="gone" />
+
+            <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addPerHourET"
+        android:layout_row="9"
+        android:layout_column="3"
+        android:hint="@string/SetHPerHour"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:layout_gravity="fill_horizontal"
+                android:visibility="gone" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="10"
+                android:layout_column="0"
+                android:layout_columnSpan="4"
+                android:id="@+id/gridSpecial">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/SetSpecialWage"
+                    android:id="@+id/textView20"
+                    android:layout_row="16"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="false"
+                    android:layout_marginTop="20dp"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SetNightHours"
+                    android:id="@+id/cbN"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_row="17"
+                    android:layout_marginTop="10dp"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/SetFrom"
+                    android:id="@+id/bFromN"
+                    android:layout_column="2"
+                    android:layout_row="17"
+                    android:layout_gravity="right|center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="#5df7ff"
+                    android:clickable="true"
+                    android:onClick="showTimeFromPickerDialogN"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/bTillN"
+                    android:layout_column="3"
+                    android:layout_row="17"
+                    android:text="@string/SetTo"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="#5df7ff"
+                    android:clickable="true"
+                    android:onClick="showTimeTillPickerDialogN"
+                    android:enabled="false" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_row="18"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:id="@+id/rgN"
+                    android:clickable="false">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IsraLaw"
+                        android:id="@+id/rbIsraelN"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="125%"
+                        android:id="@+id/rb125N"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150%"
+                        android:id="@+id/rb150N"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbOtherN"
+                        android:text="@string/SetOther"
+                        android:enabled="false" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perHourN"
+                    android:hint="@string/SetHPerHour"
+                    android:inputType="number|numberDecimal"
+                    android:enabled="false"
+                    android:numeric="signed"
+                    android:layout_column="3"
+                    android:layout_row="19"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SetSabbaticalHours"
+                    android:id="@+id/cbS"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_row="20"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/SetFrom"
+                    android:id="@+id/bFromS"
+                    android:layout_column="2"
+                    android:layout_row="20"
+                    android:layout_gravity="right|center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="#5df7ff"
+                    android:clickable="true"
+                    android:onClick="showTimeFromPickerDialogS"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/bTillS"
+                    android:layout_column="3"
+                    android:layout_row="20"
+                    android:text="@string/SetTo"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="#5df7ff"
+                    android:clickable="true"
+                    android:onClick="showTimeTillPickerDialogS"
+                    android:enabled="false" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_row="21"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:id="@+id/rgS">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IsraLaw"
+                        android:id="@+id/rbIsraelS"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="125%"
+                        android:id="@+id/rb125S"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150%"
+                        android:id="@+id/rb150S"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbOtherS"
+                        android:text="@string/SetOther"
+                        android:enabled="false" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perHourS"
+                    android:hint="@string/SetHPerHour"
+                    android:inputType="number|numberDecimal"
+                    android:enabled="false"
+                    android:numeric="signed"
+                    android:layout_column="3"
+                    android:layout_row="22"
+                    android:visibility="gone" />
+
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/SetDrives"
+                android:id="@+id/textView16"
+                android:layout_row="11"
+                android:layout_column="0"
+                android:layout_columnSpan="4"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/SetDriveType"
+                android:id="@+id/textView18"
+                android:layout_row="12"
+                android:layout_column="0"
+                android:layout_marginTop="5dp"
+                android:layout_columnSpan="2" />
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerDrive"
+                android:layout_row="12"
+                android:layout_column="2"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="5dp"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/SetBonusDrive"
+                android:id="@+id/bonusDriveTV"
+                android:layout_row="16"
+                android:layout_column="0"
+                android:visibility="gone"
+                android:layout_columnSpan="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/SetPerKilometer"
+                android:id="@+id/perKilometerTV"
+                android:layout_row="14"
+                android:layout_column="0"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:layout_columnSpan="2" /><![CDATA[
+
+            />
+
+            ]]>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/perKilometerET"
+                android:layout_row="14"
+                android:layout_column="2"
+                android:hint="@string/SetHPerKilometer"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="fill_horizontal"
+                android:visibility="gone"
+                android:layout_columnSpan="2"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bonusDrivesET"
+                android:layout_row="16"
+                android:layout_column="2"
+                android:hint="@string/SetHBonusDrives"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:layout_gravity="fill_horizontal"
+                android:visibility="gone"
+                android:layout_columnSpan="2"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_row="21"
+                android:layout_column="0"
+                android:gravity="center|center_horizontal"
+                android:layout_gravity="center"
+                android:id="@+id/sendWorkBtn"
+
+                android:text="@string/SetSendWork"
+                android:textColor="#FFEFFF"
+                android:textSize="23sp"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/button_send_work"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:layout_columnWeight="4"
+                android:layout_columnSpan="4"
+                android:visibility="visible"
+                android:onClick="onClickBtn" />
+
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>
+

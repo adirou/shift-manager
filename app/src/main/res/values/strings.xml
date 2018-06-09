@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name" >ShiftManager</string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <!--> DialogError</!-->
+    <string name="ok">Ok</string>
+    <string name="dateIsWrong">Please enter date</string>
+
+
+    <string-array name="typeWork_array">
+        <item>Global Per Day</item>
+        <item>Minimal salary / Levels</item>
+        <item>Per Hour </item>
+        <item>Per Hour(Tips) </item>
+        <item>Manually</item>
+
+    </string-array>
+    <string-array name="typeDrive_array">
+        <item>Manually</item>
+        <item>Permanent repayment</item>
+        <item>PerKilometer</item>
+    </string-array>
+
+        <integer-array name="colors">
+            <item>@color/bk</item>
+            <item>@color/r</item>
+            <item>@color/g</item>
+            <item>@color/b</item>
+            <item>@color/y</item>
+            <item>@color/m</item>
+            <item>@color/c</item>
+            <item>@color/w</item>
+        </integer-array>
+
+        <color name="bk">#000</color>
+        <color name="r">#f00</color>
+        <color name="g">#0f0</color>
+        <color name="b">#00f</color>
+        <color name="y">#ff0</color>
+        <color name="m">#f0f</color>
+        <color name="c">#0ff</color>
+        <color name="w">#fff</color>
+
+
+    <string-array name="month_array">
+        <item>Other Dates</item>
+        <item>January-1</item>
+        <item>February-2</item>
+        <item>March-3</item>
+        <item>April-4</item>
+        <item>May-5</item>
+        <item>June-6</item>
+        <item>Jule-7</item>
+        <item>August-8</item>
+        <item>September-9</item>
+        <item>October-10</item>
+        <item>November-11</item>
+        <item>December-12</item>
+
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_show_events">showEvents</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="title_activity_sum_month">SumMonth</string>
+    <string name="title_activity_view_on_calender">ViewOnCalender</string>
+    <string name="title_activity_events">EventsActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_set_works">SetWorksActivity</string>
+
+    <string name="MainManuallySalary">Manual Salary:</string>
+    <string name="test_banner_ad_unit_id">ca-app-pub-5049138569063794/8352992860</string>
+    <string name="ListTab">Shifts</string>
+    <string name="dateQ">Date:</string>
+    <string name="dateL">Date:</string>
+    <string name="workP">Job:</string>
+    <string name="locationP">Location:</string>
+    <string name="timeStartP">Start Time:</string>
+    <string name="timeEndP">End Time:</string>
+    <string name="DriveP">Travel:</string>
+    <string name="bonusTipP">Bonus/Tip:</string>
+    <string name="calculateP">Calculate</string>
+    <string name="hoursP">Hours:</string>
+    <string name="Hlocation">Location</string>
+    <string name="Hhours">Hours</string>
+    <string name="salaryP">Salary</string>
+    <string name="salaryCashP">Salary with Cash</string>
+    <string name="Hparking">Parking</string>
+    <string name="Hdistance">Distance</string>
+    <string name="HprivateTip">Private Tip</string>
+    <string name="HwaiterssTip">Waiters Tip</string>
+    <string name="Hbonus">Bonus</string>
+    <string name="Hcomments">Comments</string>
+    <string name="MainDriveManually">"travel  manually"</string>
+    <string name="MainDistance">Distance</string>
+    <string name="MainUpdate">Update</string>
+    <string name="MainNewShift">New shift -</string>
+    <string name="MainValidDate">Please enter valid date</string>
+    <string name="MainDelete">Delete</string>
+    <string name="MainAreYouSure">Are you sure you want to Delete this shift</string>
+    <string name="MainCancel">Cancel</string>
+    <string name="EventsList">Shifts</string>
+    <string name="EventsCalender">Calender</string>
+    <string name="EventsSummary">Summary</string>
+    <string name="EventsWorks">Jobs</string>
+    <string name="EventsNewWork">Set Job</string>
+    <string name="SumSalary">Salary:</string>
+    <string name="SumSalaryCash">Salary (+Cash):</string>
+    <string name="SumNumEvent">Num Of Shifts:</string>
+    <string name="SumCash">Cash(tip):</string>
+    <string name="SumHours">Hours:</string>
+    <string name="SumDrives">Travels:</string>
+    <string name="SumAverageShift">Avg. For Shift:</string>
+    <string name="SumDistance">Distance:</string>
+    <string name="SumAverageForHour">Avg. For Hour:</string>
+    <string name="SumParking">Parking:</string>
+    <string name="SumWorks">Jobs</string>
+    <string name="SumExcel">Export To Excel</string>
+    <string name="MainDeleteShift">Delete shift</string>
+    <string name="SumSelectWorks">Select works you want to summarize :</string>
+    <string name="SumDone">Done!</string>
+    <string name="SetWorkName">Job Name:</string>
+    <string name="SetColor">Color:</string>
+    <string name="SetDefault">Default:</string>
+    <string name="SetSalaryType">Salary Type:</string>
+    <string name="SetGlobal">Global:</string>
+    <string name="SetStartQ">Start:</string>
+    <string name="SetStep">Minimum:</string>
+    <string name="SetStepII">Step II:</string>
+    <string name="SetStepIII">Step III:</string>
+    <string name="SetOverTime">Overtime:</string>
+    <string name="SetPerHour">Per Hour:</string>
+    <string name="SetHHour">from hour</string>
+    <string name="SetDrives">Travels</string>
+    <string name="SetDriveType">Travel Type:</string>
+    <string name="SetPerKilometer">Per Kilometer:</string>
+    <string name="SetBonusDrive">Bonus Travel:</string>
+    <string name="SetSalaryPerHour">salary per hour</string>
+    <string name="SetHgGlobal">global</string>
+    <string name="SetHSalary">salary</string>
+    <string name="SetHPerHour">per hour</string>
+    <string name="SetStart">start</string>
+    <string name="SetHPerKilometer">per kilometer</string>
+    <string name="SetHStart">start</string>
+    <string name="SetHBonusDrives">bonus drive</string>
+    <string name="SetHWorkName">job name</string>
+    <string name="SetMust">Must have at least one job, so add one</string>
+    <string name="SetOverTimeI">Overtime I:</string>
+    <string name="SetOverTimeII">Overtime II:</string>
+    <string name="SetPleaseWorkName">Please enter JobName!</string>
+    <string name="SetPleaseGlobal">Please enter global salary per day!</string>
+    <string name="SetPleaseStepedFirst">Please enter the start amount</string>
+    <string name="SetPleaseStepSecond">Please enter the second step before the third!</string>
+    <string name="SetPleaseStepSecondFull">Please enter both fields at the second step!</string>
+    <string name="SetPleaseStepThirdFull">Please enter both fields at the third step!</string>
+    <string name="SetPleaseStart">Please enter all the field of the Start type or choose another one!</string>
+    <string name="SetPleasePerHour">Please enter Per Hour salary field!</string>
+    <string name="SetPleasePerHourOvertimeFull">Please enter both fields Overtime and Hour!</string>
+    <string name="SetPleaseStepPerFull">If you dont fill all the fields , you should use another type!</string>
+    <string name="SetPleasePerKilometer">Please enter perKilometer field or switch to another Drive type!</string>
+    <string name="SetPermanentRepayment">Repayment:</string>
+    <string name="SetHPermanantRepayment">repayment</string>
+    <string name="PlusCash">(+cash)</string>
+    <string name="SetDoDelete1">In order to do this you have to delete all the shifts under that job, delete them all?</string>
+    <string name="SetDoDelete2">Are you sure you want to Delete this job?</string>
+    <string name="date">--/--/--</string>
+    <string name="DialogCalenderDontHave">You dont have a shift \n on this date</string>
+    <string name="DialogCalenderNewShift">New Shift</string>
+    <string name="DialogCalenderUpdate">Update</string>
+    <string name="WorkAdapterNewWork">...Add new job...</string>
+    <string name="SetMessageFirstWork">In order to add shifts , you have to add a new job first!</string>
+    <string name="SetMessageGlobal">If you earn the same amount each day this type is for you!</string>
+    <string name="SetMessageManually">If you earn in each day a different amount, this type is for you!</string>
+    <string name="SetMessagePerHour">If you earn your salary per work hour this type is for you!</string>
+    <string name="SetMessageStepped">If you earn minimal salary and from a spesific hour you start to earn overtime this type is for you!(option to enter levels)</string>
+    <string name="SetDeleteWork">Delete job</string>
+    <string name="MainPerHour">Per Hour:</string>
+    <string name="MainShift">Shift</string>
+    <string name="SetWork">Set Job</string>
+    <string name="SetMessageManuallyPerHour">If you earn your salary per work hour depends on tips (in cash) this salary type is for you!</string>
+    <string name="SetSendWork">Set Job</string>
+    <string name="SetMinPerHour">Min. Per Hour:</string>
+    <string name="SetHFromHour">from hour:</string>
+    <string name="changing">changing</string>
+    <string name="SetPleaseOverTimeFull">Please enter both overtime fields!</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="SumFrom">From:</string>
+    <string name="SumTo">To:</string>
+    <string name="PlusOnlyCash">(cash)</string>
+    <string name="PlusDrives">(travel)</string>
+    <string name="PlusBonus">(bonus)</string>
+    <string name="SetSpecialWage">Special Wages</string>
+    <string name="SetNightHours">Night Hours:</string>
+    <string name="SetSabbaticalHours">Sabbatical Hours:</string>
+    <string name="SetOther">Other</string>
+    <string name="SetFrom">From:</string>
+    <string name="SetTo">To:</string>
+    <string name="SetPleaseNightFull">Please enter all the night hour fields!</string>
+    <string name="SetPleaseSabbathFull">Please enter all the sabbatical hour fields!</string>
+    <string name="SetPleaseNightPerHour">Please enter wage per hour at night or choose differently</string>
+    <string name="SetPleaseSabbaticalPerHour">Please enter wage per hour at sabbatical or choose differently</string>
+</resources>

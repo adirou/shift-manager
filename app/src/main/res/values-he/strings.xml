@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+
+    <!--> DialogError</!-->
+    <string name="ok">שלום</string>
+    <string name="dateIsWrong">בבקשה הכנס תאריך</string>
+
+
+    <string-array name="typeWork_array">
+        <item>גלובלי ליום</item>
+        <item>סכום התחלתי / שלבים</item>
+        <item>שכר לפי שעה</item>
+        <item>מלצרות טיפים</item>
+        <item>ידנית</item>
+    </string-array>
+    <string-array name="typeDrive_array">
+        <item>ידנית</item>
+        <item>החזר קבוע</item>
+        <item>לפי קילומטרים</item>
+    </string-array>
+
+        <integer-array name="colors">
+            <item>@color/bk</item>
+            <item>@color/r</item>
+            <item>@color/g</item>
+            <item>@color/b</item>
+            <item>@color/y</item>
+            <item>@color/m</item>
+            <item>@color/c</item>
+            <item>@color/w</item>
+        </integer-array>
+
+        <color name="bk">#000</color>
+        <color name="r">#f00</color>
+        <color name="g">#0f0</color>
+        <color name="b">#00f</color>
+        <color name="y">#ff0</color>
+        <color name="m">#f0f</color>
+        <color name="c">#0ff</color>
+        <color name="w">#fff</color>
+
+
+    <string-array name="month_array">
+        <item>בין תאריכים אחרים</item>
+        <item>ינואר-1</item>
+        <item>פברואר-2</item>
+        <item>מרץ-3</item>
+        <item>April-4</item>
+        <item>May-5</item>
+        <item>June-6</item>
+        <item>Jule-7</item>
+        <item>August-8</item>
+        <item>September-9</item>
+        <item>October-10</item>
+        <item>November-11</item>
+        <item>December-12</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="test_banner_ad_unit_id">ca-app-pub-5049138569063794/8352992860</string>
+    <string name="date">--/--/--</string>
+    <string name="ListTab">רשימה</string>
+    <string name="dateQ">תאריך:</string>
+    <string name="dateL">תאריך</string>
+    <string name="locationP">מיקום</string>
+    <string name="timeStartP">שעת התחלה</string>
+    <string name="timeEndP">שעת סיום</string>
+    <string name="workP">עבודה:</string>
+    <string name="DriveP">נסיעות</string>
+    <string name="bonusTipP">בונוס וטיפ</string>
+    <string name="calculateP">חשב</string>
+    <string name="hoursP">שעות</string>
+    <string name="Hlocation">מיקום</string>
+    <string name="Hhours">שעות</string>
+    <string name="salaryP">משכורת</string>
+    <string name="salaryCashP">משכורת כולל מזומן</string>
+    <string name="Hparking">חניה</string>
+    <string name="Hdistance">מרחק(ק"מ)</string>
+    <string name="HprivateTip">טיפ אישי</string>
+    <string name="HwaiterssTip">טיפ מלצרים</string>
+    <string name="Hbonus">בונוס</string>
+    <string name="Hcomments">הערות</string>
+    <string name="MainDriveManually">נסיעה ידנית</string>
+    <string name="MainDistance">מרחק(ק"מ)</string>
+    <string name="MainUpdate">עידכון -</string>
+    <string name="MainNewShift">משמרת חדשה-</string>
+    <string name="MainValidDate">בבקשה הכנס תאריך תקין</string>
+    <string name="MainDelete">מחק</string>
+    <string name="MainAreYouSure">האם אתה בטוח שברצונך למחוק משמרת זאת?</string>
+    <string name="MainCancel">ביטול</string>
+    <string name="EventsList">כל המשמרות</string>
+    <string name="EventsCalender">לוח שנה</string>
+    <string name="EventsSummary">סיכום</string>
+    <string name="EventsWorks">עבודות</string>
+    <string name="EventsNewWork">הגדר עבודה</string>
+    <string name="SumSalary">משכורת:</string>
+    <string name="SumSalaryCash">משכורת(+מזומן):</string>
+    <string name="SumParking">חניה:</string>
+    <string name="SumNumEvent">מספר משמרות:</string>
+    <string name="SumHours">שעות:</string>
+    <string name="SumDrives">נסיעות:</string>
+    <string name="SumDistance">מרחק(ק"מ):</string>
+    <string name="SumCash">מזומן(טיפים):</string>
+    <string name="SumAverageShift">ממוצע למשמרת:</string>
+    <string name="SumAverageForHour">ממוצע לשעה:</string>
+    <string name="SumWorks">עבודות</string>
+    <string name="SumExcel">ייצא לאקסל</string>
+    <string name="MainDeleteShift">מחק משמרת</string>
+    <string name="SumSelectWorks">בחר את העבודות שתרצה לסכם:</string>
+    <string name="SumDone">בצע!</string>
+    <string name="SetWorkName">שם העבודה:</string>
+    <string name="SetStepIII">שלב-III:</string>
+    <string name="SetStepII">שלב-II:</string>
+    <string name="SetStep">מינימום:</string>
+    <string name="SetStartQ">שכר התחלתי:</string>
+    <string name="SetStart">שכר התחלתי</string>
+    <string name="SetSalaryType">סוג שכר:</string>
+    <string name="SetSalaryPerHour">שכר לפי שעה</string>
+    <string name="SetPerKilometer">לפי קילומטר:</string>
+    <string name="SetPerHour">כמה לשעה:</string>
+    <string name="SetOverTime">שעות נוספות:</string>
+    <string name="SetHgGlobal">גלובלי</string>
+    <string name="SetHStart">התחלתי</string>
+    <string name="SetHSalary">שכר</string>
+    <string name="SetHPerKilometer">כמה לקילומטר</string>
+    <string name="SetHPerHour">כמה לשעה</string>
+    <string name="SetHHour">משעה</string>
+    <string name="SetHBonusDrives">בונוס נסיעות</string>
+    <string name="SetGlobal">גלובלי:</string>
+    <string name="SetDrives">נסיעות</string>
+    <string name="SetDriveType">סוג החזר:</string>
+    <string name="SetDefault">ברירת מחדל:</string>
+    <string name="SetColor">צבע:</string>
+    <string name="SetBonusDrive">בונוס נסיעות:</string>
+    <string name="app_name" >ShiftManager</string>
+    <string name="SetHWorkName">שם העבודה</string>
+    <string name="SetMust">חייב לפחות עבודה אחת , אז הוסף אחת בבקשה</string>
+    <string name="SetOverTimeI">שעות נוספות I:</string>
+    <string name="SetOverTimeII">שעות נוספות II:</string>
+    <string name="SetPleaseWorkName">בבקשה הכנס שם לעבודה!</string>
+    <string name="SetPleaseGlobal">בבקשה הכנס שכר גלובלי! </string>
+    <string name="SetPleaseStepedFirst">בבקשה הכנס  את הסכום הראשוני!</string>
+    <string name="SetPleaseStepSecond">בבקשה הכנס את השלב השני לפני השלישי!</string>
+    <string name="SetPleaseStepSecondFull">בבקשה הכנס את שני השדות של השלב השני!</string>
+    <string name="SetPleaseStepThirdFull">בבקשה הכנס את שני השדות של השלב השלישי!</string>
+    <string name="SetPleaseStart">בבקשה הכנס את כל השדות של "שכר התחלתי" או בחר סוג אחר!</string>
+    <string name="SetPleasePerHour">בבקשה הכנס כמה לשעה!</string>
+    <string name="SetPleasePerHourOvertimeFull">בבקשה הכנס את שני השדות "שעות נוספות" ואת ה"שעה" שבה מתחילה השעה נוספת!</string>
+    <string name="SetPleaseStepPerFull">אם אתה לא ממלא את כל השדות ,מומלץ לבחור סוג שכר אחר!</string>
+    <string name="SetPleasePerKilometer">בבקשה הכנס "כמה לקילומטר? או עבור לסוג החזר נסיעות אחר!"</string>
+    <string name="SetHPermanantRepayment">החזר קבוע</string>
+    <string name="SetPermanentRepayment">החזר קבוע:</string>
+    <string name="PlusCash">(+מזומן)</string>
+    <string name="SetDoDelete1">על מנת למחוק את עבודה זאת עליך למחוק את כל הארועים תחת העבודה, למחוק את כולם?</string>
+    <string name="SetDoDelete2">האם אתה בטוח שברצונך למחוק עבודה זאת?</string>
+    <string name="DialogCalenderDontHave">אין לך משמרת בתאריך זה</string>
+    <string name="DialogCalenderNewShift">הוסף משמרת</string>
+    <string name="DialogCalenderUpdate">עדכן</string>
+    <string name="MainManuallySalary">שכר יומי:</string>
+    <string name="SetMessageFirstWork">על מנת שתוכל להוסיף משמרות עליך להוסיף קודם כל עבודה</string>
+    <string name="SetMessageGlobal">אם אתה מרוויח כל יום עבודה את אותו שכר, ואין לך שעות נוספות זה הסוג שכר בשבילך!</string>
+    <string name="SetMessageStepped">אם אתה מקבל משכרות מינימלית ומשעה מסויימת מקבל שעות נוספות סוג שכר זה בשבילך ! (אופציה להכניס מדרגות שכר)</string>
+    <string name="SetMessagePerHour">אם אתה מרוויח לפי שעה זה הסוג שכר בשבילך!</string>
+    <string name="SetMessageManually">אם אתה רוצה להזין כל יום עבודה את השכר, סוג שכר זה בשבילך !</string>
+    <string name="WorkAdapterNewWork">...הוסף עבודה חדשה ...</string>
+
+    <string name="title_activity_show_events">showEvents</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="title_activity_sum_month">SumMonth</string>
+    <string name="title_activity_view_on_calender">ViewOnCalender</string>
+    <string name="title_activity_events">EventsActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_set_works">SetWorksActivity</string>
+    <string name="SetDeleteWork">מחק עבודה</string>
+    <string name="MainPerHour">לפי שעה:</string>
+    <string name="MainShift">משמרת</string>
+    <string name="SetWork">הגדר עבודה </string>
+    <string name="SetMessageManuallyPerHour">מלצרות-אם אתה מרוויח לפי שעה תלוי בטיפים (מזומן) ואם אתה מקבל את ההפרש מהמינימום למשכורת  אז סוג שכר זה בשבילך!</string>
+    <string name="SetSendWork">הגדר עבודה</string>
+    <string name="SetMinPerHour">מינימום לשעה:</string>
+    <string name="SetHFromHour">משעה:</string>
+    <string name="changing">changing</string>
+    <string name="SetPleaseOverTimeFull">בבקשה הכנס את שני השדות בשעות נוספות!</string>
+    <string name="appwidget_text">דוגמה</string>
+    <string name="add_widget">הוסף וידגט</string>
+    <string name="SumFrom">מתאריך:</string>
+    <string name="SumTo">עד תאריך:</string>
+    <string name="pref_load_backup">Load Backup</string>
+    <string name="PlusOnlyCash">(מזומן)</string>
+    <string name="PlusDrives">(נסיעה)</string>
+    <string name="PlusBonus">(בונוס)</string>
+    <string name="SetSpecialWage">שכר מיוחד</string>
+    <string name="SetNightHours">שעות לילה:</string>
+    <string name="SetOther">שונה</string>
+    <string name="SetSabbaticalHours">שעות שבת:</string>
+    <string name="SetTo">עד שעה:</string>
+    <string name="SetFrom">משעה:</string>
+    <string name="SetPleaseNightFull">בבקשה הכנס את כל השדות בשעות הלילה!</string>
+    <string name="SetPleaseSabbathFull">בבקשה הכנס את כל השדות בשעות השבות!</string>
+    <string name="SetPleaseNightPerHour">בבקשה הכנס כמה לשעה בלילה או תבחר בצורה שונה!</string>
+    <string name="SetPleaseSabbaticalPerHour">בבקשה הכנס כמה לשעה בשבת או תבחר בצורה שונה!</string>
+
+
+</resources>

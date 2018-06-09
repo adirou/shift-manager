@@ -1,0 +1,293 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#ff52ffa1">
+
+    <Spinner
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTE"
+        android:spinnerMode="dropdown"
+        android:layout_alignBottom="@+id/HoursET"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Location:"
+        android:id="@+id/textView10"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationET"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_marginLeft="20dp"
+        android:hint="Location"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hours:"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/typeEvent"
+        android:layout_toEndOf="@+id/typeEvent"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time Start"
+        android:id="@+id/timeStartTV"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showTimeStartPickerDialog"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:backgroundTint="#ff73ffff"
+        android:background="#ff29fffa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time End"
+        android:id="@+id/timeEndTV"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showTimeEndPickerDialog"
+        android:layout_row="8"
+        android:layout_column="1"
+        android:background="#ff29fffa" />
+
+    <EditText
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/HoursET"
+        android:hint="Hours"
+        android:inputType="number|numberDecimal"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/DistanceET"
+        android:layout_alignStart="@+id/DistanceET"
+        android:layout_row="10"
+        android:layout_column="1"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tip:"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/drivesTV"
+        android:layout_alignBottom="@+id/drivesTV"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_row="12"
+        android:layout_column="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Type:"
+        android:id="@+id/typeEvent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date:"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date"
+        android:id="@+id/DateTV"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showDatePickerDialog"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:background="#ff29fffa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Drives:"
+        android:id="@+id/drivesTV"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_row="12"
+        android:layout_column="0"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/DistanceET"
+        android:layout_alignTop="@+id/drivesTV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Distance"
+        android:inputType="number"
+        android:layout_gravity="right"
+        android:layout_row="13"
+        android:layout_column="0" />
+
+    <EditText
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/PrivateTipET"
+        android:hint="Private Tip"
+        android:inputType="number"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/HowManyTravelersET"
+        android:layout_alignEnd="@+id/HowManyTravelersET"
+        android:layout_gravity="left"
+        android:layout_row="13"
+        android:layout_column="1"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/WaitersTipET"
+        android:hint="Waiters Tip"
+        android:inputType="number"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/HowManyTravelersET"
+        android:layout_alignEnd="@+id/HowManyTravelersET"
+        android:layout_gravity="left"
+        android:layout_row="14"
+        android:layout_column="1"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TipForsSalET"
+        android:hint="TipForSal"
+        android:inputType="number"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/HowManyTravelersET"
+        android:layout_alignEnd="@+id/HowManyTravelersET"
+        android:layout_gravity="left"
+        android:layout_row="15"
+        android:layout_column="1"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/sendBt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="SendMethod"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="18"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Salary"
+        android:id="@+id/sumTV"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/drivesTV"
+        android:layout_toEndOf="@+id/drivesTV"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="17"
+        android:layout_column="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show All"
+        android:id="@+id/deleteBt"
+        android:layout_row="17"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:onClick="deleteOrShowMethod" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Salary With Cash"
+        android:id="@+id/sumCash"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/drivesTV"
+        android:layout_toEndOf="@+id/drivesTV"
+        android:layout_row="18"
+        android:layout_column="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="0dp" />
+
+    <EditText
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ParkingET"
+        android:hint="Parking"
+        android:layout_below="@+id/DistanceET"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="number"
+        android:layout_gravity="right"
+        android:layout_row="15"
+        android:layout_column="0" />
+
+    <EditText
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/HowManyTravelersET"
+        android:hint="Travelers"
+        android:layout_above="@+id/DistanceET"
+        android:layout_alignRight="@+id/ParkingET"
+        android:layout_alignEnd="@+id/ParkingET"
+        android:inputType="number"
+        android:layout_gravity="bottom|right"
+        android:layout_row="14"
+        android:layout_column="0" />
+
+</GridLayout>
