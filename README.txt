@@ -1,4 +1,4 @@
-Shift-Manager (not longer supported in android 6 and above)
+#Shift-Manager (not longer supported in android 6 and above)
 https://www.facebook.com/ShiftManagerAp/
 
 An android app which help the user track his shifts( very useful to waiters ).
